@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DottChallenge</string>
+    <string name="action_ok">Got it</string>
+    <string name="action_close">Close</string>
+    <string name="action_settings">Settings</string>
+    <string name="maps_venues">Venues</string>
+    <string name="maps_location_permission">Location permission is necessary to continue</string>
+    <string name="maps_error">Error occurred while searching venues</string>
+    <string name="maps_venue_details_error">Can\'t open details of this venue</string>
+    <string name="details_title">Venue details</string>
+    <string name="details_error">No data found for venue</string>
+</resources>

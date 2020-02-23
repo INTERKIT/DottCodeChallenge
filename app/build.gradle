@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdkVersion sdkCompileVersion
+    buildToolsVersion buildToolsAllVersion
+
+    defaultConfig {
+        applicationId "com.example.dottchallenge"
+        minSdkVersion sdkMinVersion
+        targetSdkVersion sdkTargetVersion
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug
+        release
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation androidXDependencies.appcompat
+    implementation androidXDependencies.materialDesign
+    implementation androidXDependencies.coreKtx
+    implementation androidXDependencies.constraintLayout
+    implementation androidXDependencies.fragment
+    implementation androidXDependencies.fragmentKtx
+
+    implementation kotlinDependencies.stdlib
+    implementation kotlinDependencies.rxKotlin
+
+    implementation rxDependencies.core
+    implementation rxDependencies.android
+
+    implementation retrofitDependencies.core
+    implementation retrofitDependencies.gson
+    implementation retrofitDependencies.rxAdapter
+
+    implementation okHttpDependencies.okHttp
+    implementation okHttpDependencies.interceptor
+
+    implementation koinDependencies.core
+    implementation koinDependencies.scope
+    implementation koinDependencies.viewModel
+
+    implementation otherDependencies.timber
+    implementation otherDependencies.maps
+    implementation otherDependencies.location
+
+    testImplementation testDependencies.junit
+    testImplementation testDependencies.mockk
+    testImplementation testDependencies.archCoreTesting
+
+    androidTestImplementation androidTestDependencies.runner
+    androidTestImplementation androidTestDependencies.espresso
+}
