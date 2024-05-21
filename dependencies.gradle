@@ -6,8 +6,8 @@ ext {
     sdkTargetVersion = 29
     sdkCompileVersion = 29
 
-    gradlePluginVersion = '3.5.3'
-    kotlinVersion = '1.3.61'
+    gradlePluginVersion = '7.2.2'
+    kotlinVersion = '1.6.20'
 
     gradlePluginDependencies = [
             build : "com.android.tools.build:gradle:$gradlePluginVersion",
