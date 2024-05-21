@@ -1,4 +1,4 @@
-<h1 align="center">Atlant Blockchain Android App</h1><br>
+<h1 align="center">DottCodeChallenge App</h1><br>
 
 <p align="center">
   <a href="#"><img alt="Organization" src="https://avatars.githubusercontent.com/u/152767650?s=20"/></a>
